@@ -1,0 +1,2 @@
+strip() - da nema prostora izmedju dva reda kod stringa, mogu da dodam na to i .lower() ili bilo koju funkciju zajedno na str
+replace("ovde stavim sta hocu da zamenim" , "ovde stavim cime hocu da zamenim")
