@@ -1,2 +1,5 @@
-strip() - da nema prostora izmedju dva reda kod stringa, mogu da dodam na to i .lower() ili bilo koju funkciju zajedno na str
-replace("ovde stavim sta hocu da zamenim" , "ovde stavim cime hocu da zamenim")
+.strip() - da nema prostora izmedju dva reda kod stringa, mogu da dodam na to i .lower() ili bilo koju funkciju zajedno na str
+.replace("ovde stavim sta hocu da zamenim" , "ovde stavim cime hocu da zamenim")
+from datetime import datetime - za vreme i datum
+with open("log.txt", "a") as file: - za citanje file-a
+file.write(f"Program pokrenut: {datetime.now()}\n") - gore je "a" znaci append na file-u, a ovde write znaci dodajemo u file-u ono sto je u zagradi. f - sve sto je u {} formatiraj u str
