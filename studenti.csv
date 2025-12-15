@@ -1,0 +1,33 @@
+*******************************************
+
+studenti.csv
+"ime, poen"
+"Marko, 8"
+"Jana, 10"
+"Aca, 4"
+"Stefan, 9"
+"Marija, 9"
+"Andjela, 7"
+
+*******************************************
+
+zbir = 0
+broj = 0
+
+with open("studenti.csv", "r") as file:
+    next(file)  
+    for red in file:
+        podaci = red.strip().split(",")
+        ocena = int(podaci[1])
+        zbir += ocena
+        broj += 1
+
+prosek = zbir / broj
+print("Prosečna ocena je:", prosek)
+
+*******************************************
+
+next(file) - preskace prvi red
+podaci = red.strip().split(",") - .split(",") znaci da podeli prema zarezu
+ocena = int(podaci[1]) - odredjivanje sta je ocena 
+broj - broj ocena kako bi se odredila prosecna ocena
